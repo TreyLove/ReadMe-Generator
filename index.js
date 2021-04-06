@@ -4,7 +4,7 @@ const { clear } = require('console');
 const fs = require('fs');
 const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
-
+// prompt the user to input the information they want their readme to contain
 const promptUser = async () => {
   return await inquirer.prompt([
     {
@@ -70,6 +70,7 @@ const promptUser = async () => {
 async function init() {
   const answers = await promptUser()
   console.log(answers)
+  // template literal that will be written into the generated readme with references to the users response to the prompts
 
   const finalReadMe = `
 
@@ -120,7 +121,7 @@ Email: ${answers.email}
 This project is licensed under the ${answers.license} License 
 
 `
-
+  // write the file to the generated readme file
   fs.writeFile("./generatedreadme/readme.md", finalReadMe, (error) => {
     console.log(error)
 

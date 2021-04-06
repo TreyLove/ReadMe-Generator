@@ -49,7 +49,7 @@ const promptUser = async () => {
     },
     {
       type: 'input',
-      name: 'testInscructions',
+      name: 'testInstructions',
       message: 'Input the test instructions for your project',
     },
     {

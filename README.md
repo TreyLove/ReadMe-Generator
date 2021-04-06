@@ -13,6 +13,7 @@ This is a node.js application that allows users easily create a readme template 
 - After answering all of the prompts your readme file will be placed in the generatedReadme folder
 
 ## Example Video
+Link to video: https://drive.google.com/file/d/1wCbZJCjQl6zeiluIG4zzUhy4VM_CAdzU/view
 
 ![gif of working website](./ExampleVideo/readmeGenGif.gif)
 
